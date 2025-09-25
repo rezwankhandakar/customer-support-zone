@@ -1,6 +1,6 @@
 
 import React, { use, useState } from 'react';
-import toast from 'react-hot-toast'; 
+import toast from 'react-hot-toast';
 
 const Mainsection = ({ teketsPromise, inProgressCount, setInProgressCount }) => {
   const tecketsData = use(teketsPromise);
@@ -139,4 +139,3 @@ const Mainsection = ({ teketsPromise, inProgressCount, setInProgressCount }) => 
 };
 
 export default Mainsection;
-
