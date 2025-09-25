@@ -1,0 +1,129 @@
+[
+  {
+    "id": 1001,
+    "title": "Login Issue",
+    "description": "Customer cannot log in with valid credentials.",
+    "customer": "John Smith",
+    "priority": "HIGH PRIORITY",
+    "status": "Open",
+    "createdAt": "1/12/2024"
+  },
+  {
+    "id": 1002,
+    "title": "Password Reset Not Working",
+    "description": "Reset link expired immediately after receiving.",
+    "customer": "Sarah Johnson",
+    "priority": "MEDIUM PRIORITY",
+    "status": "In Progress",
+    "createdAt": "1/13/2024"
+  },
+  {
+    "id": 1003,
+    "title": "Payment Declined Error",
+    "description": "Customer’s card is declined even though funds are available.",
+    "customer": "Michael Brown",
+    "priority": "HIGH PRIORITY",
+    "status": "Open",
+    "createdAt": "1/14/2024"
+  },
+  {
+    "id": 1004,
+    "title": "Incorrect Billing Address",
+    "description": "Customer’s billing address shows a different city. They updated it but it still displays the old one.",
+    "customer": "Emily Davis",
+    "priority": "LOW PRIORITY",
+    "status": "Open",
+    "createdAt": "1/18/2024"
+  },
+  {
+    "id": 1005,
+    "title": "Refund Not Received",
+    "description": "Refund was processed 10 days ago but not credited to the bank account.",
+    "customer": "Daniel Wilson",
+    "priority": "HIGH PRIORITY",
+    "status": "In Progress",
+    "createdAt": "1/20/2024"
+  },
+  {
+    "id": 1006,
+    "title": "App Crashes on Startup",
+    "description": "Mobile app closes immediately after launch on iOS 17.",
+    "customer": "Sophia Martinez",
+    "priority": "HIGH PRIORITY",
+    "status": "Open",
+    "createdAt": "1/22/2024"
+  },
+  {
+    "id": 1007,
+    "title": "Shipping Delay",
+    "description": "Package has been stuck in transit for 5 days with no updates.",
+    "customer": "David Anderson",
+    "priority": "MEDIUM PRIORITY",
+    "status": "In Progress",
+    "createdAt": "1/23/2024"
+  },
+  {
+    "id": 1008,
+    "title": "Email Notifications Missing",
+    "description": "Customer is not receiving order confirmation emails.",
+    "customer": "Olivia Garcia",
+    "priority": "LOW PRIORITY",
+    "status": "Open",
+    "createdAt": "1/25/2024"
+  },
+  {
+    "id": 1009,
+    "title": "Wrong Item Delivered",
+    "description": "Customer received a different product than ordered.",
+    "customer": "James Thomas",
+    "priority": "HIGH PRIORITY",
+    "status": "Open",
+    "createdAt": "1/27/2024"
+  },
+  {
+    "id": 1010,
+    "title": "Subscription Not Renewing",
+    "description": "Auto-renewal failed even though payment method is valid.",
+    "customer": "Isabella Lee",
+    "priority": "MEDIUM PRIORITY",
+    "status": "In Progress",
+    "createdAt": "1/29/2024"
+  },
+  {
+    "id": 1011,
+    "title": "Slow Website Performance",
+    "description": "Pages are taking 10+ seconds to load.",
+    "customer": "Ethan White",
+    "priority": "MEDIUM PRIORITY",
+    "status": "Open",
+    "createdAt": "2/01/2024"
+  },
+  {
+    "id": 1012,
+    "title": "Coupon Code Not Applying",
+    "description": "Discount code shows invalid during checkout.",
+    "customer": "Mia Harris",
+    "priority": "LOW PRIORITY",
+    "status": "Closed",
+    "createdAt": "2/02/2024"
+  },
+  {
+    "id": 1013,
+    "title": "Two-Factor Authentication Issue",
+    "description": "Customer not receiving SMS verification code.",
+    "customer": "Alexander Clark",
+    "priority": "HIGH PRIORITY",
+    "status": "Open",
+    "createdAt": "2/04/2024"
+  },
+  {
+    "id": 1014,
+    "title": "App Update Not Available",
+    "description": "Customer cannot see the latest app version on Google Play.",
+    "customer": "Charlotte Lewis",
+    "priority": "LOW PRIORITY",
+    "status": "In Progress",
+    "createdAt": "2/06/2024"
+  }
+  
+]
