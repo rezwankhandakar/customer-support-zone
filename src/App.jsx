@@ -4,6 +4,8 @@ import './App.css'
 import Mainsection from './Component/Mainsection'
 import Navbar from './Component/Navbar'
 import { Toaster } from 'react-hot-toast' 
+import Footer from './Component/Footer'
+
 
 const fetchTeckets =async ()=>{
   const res =await fetch ("/Tickets.json")
@@ -25,6 +27,7 @@ function App() {
           setInProgressCount={setInProgressCount} 
         />
       </Suspense>
+      <Footer></Footer>
       <Toaster position="top-right" reverseOrder={false} />
 
     </>

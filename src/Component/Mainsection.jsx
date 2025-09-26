@@ -1,6 +1,7 @@
 
 import React, { use, useState } from 'react';
 import toast from 'react-hot-toast';
+import leftImg from '../assets/vector1.png'
 
 const Mainsection = ({ teketsPromise, inProgressCount, setInProgressCount }) => {
   const tecketsData = use(teketsPromise);
@@ -30,26 +31,31 @@ const Mainsection = ({ teketsPromise, inProgressCount, setInProgressCount }) => 
   };
 
   return (
-    <main className="bg-[#f5f5f5] pt-6 px-3 md:px-6">
-      <div className="">
-        <div className="flex flex-col md:flex-row justify-between gap-4">
-          {/* In-Progress */}
-          <div className="flex-1">
-            <div className="bg-gradient-to-r from-[#632EE3] to-[#9F62F2] rounded-md h-24 flex flex-col items-center justify-center">
-              <h5 className="text-sm text-white">In-Progress</h5>
-              <h3 className="text-2xl font-bold text-white">{inProgressCount}</h3>
-            </div>
-          </div>
+    <main className="bg-[#f5f5f5]  pb-5 pt-6 px-3 md:px-6">
 
-          {/* Resolved */}
-          <div className="flex-1">
-            <div className="bg-gradient-to-r from-[#54CF68] to-[#00827A] rounded-md h-24 flex flex-col items-center justify-center">
-              <h5 className="text-sm text-white">Resolved</h5>
-              <h3 className="text-2xl font-bold text-white">{resolvedCount}</h3>
-            </div>
+      <div className="flex flex-col md:flex-row justify-between gap-4">
+        {/* In-Progress */}
+        <div className='bg-gradient-to-r from-[#632EE3] to-[#9F62F2] rounded-md h-32 w-full md:w-1/2 flex justify-between items-center px-4'>
+          <div><img className='h-32' src={leftImg} alt="" /></div>
+          <div className='text-center'>
+            <h5 className="text-sm text-white">In-Progress</h5>
+            <h3 className="text-2xl font-bold text-white">{inProgressCount}</h3>
           </div>
+          <div><img className='h-32 scale-x-[-1]' src={leftImg} alt="" /></div>
+        </div>
+
+        {/* Resolved */}
+        <div className='bg-gradient-to-r from-[#54CF68] to-[#00827A] rounded-md h-32 w-full md:w-1/2 flex justify-between items-center px-4'>
+          <div><img className='h-32' src={leftImg} alt="" /></div>
+          <div className='text-center'>
+            <h5 className="text-sm text-white">Resolved</h5>
+            <h3 className="text-2xl font-bold text-white">{resolvedCount}</h3>
+          </div>
+          <div><img className='h-32 scale-x-[-1]' src={leftImg} alt="" /></div>
         </div>
       </div>
+
+
 
       {/* Main content */}
       <div className="flex flex-col md:flex-row gap-6 mt-6">
@@ -62,15 +68,15 @@ const Mainsection = ({ teketsPromise, inProgressCount, setInProgressCount }) => 
                 ticket.status === "Open"
                   ? "bg-[#B9F8CF] text-green-600"
                   : ticket.status === "In-Progress"
-                  ? "bg-yellow-200 text-yellow-600"
-                  : "bg-gray-200 text-gray-600";
+                    ? "bg-yellow-200 text-yellow-600"
+                    : "bg-gray-200 text-gray-600";
 
               const priorityColor =
                 ticket.priority === "HIGH PRIORITY"
                   ? "text-red-500 font-semibold"
                   : ticket.priority === "MEDIUM PRIORITY"
-                  ? "text-orange-500 font-semibold"
-                  : "text-green-500 font-semibold";
+                    ? "text-orange-500 font-semibold"
+                    : "text-green-500 font-semibold";
 
               return (
                 <div
@@ -103,12 +109,12 @@ const Mainsection = ({ teketsPromise, inProgressCount, setInProgressCount }) => 
           <h2 className="text-[#34485A] text-[15px] font-semibold mb-2">Task Status</h2>
           <div className="space-y-3">
             {taskList.map((task) => (
-              <div 
-                key={task.id} 
+              <div
+                key={task.id}
                 className="bg-white p-2 flex flex-col items-center justify-center rounded-md shadow-lg shadow-gray-300"
               >
                 <h2 className="text-[12px] text-black font-semibold">{task.title}</h2>
-                <button 
+                <button
                   onClick={() => handleCompleteTask(task)}
                   className="text-[10px] w-44 bg-[#02A53B] mt-2 px-3 py-1 rounded-md text-white"
                 >
@@ -122,8 +128,8 @@ const Mainsection = ({ teketsPromise, inProgressCount, setInProgressCount }) => 
             <h2 className="text-[#34485A] text-[15px] font-semibold">Resolved Task</h2>
             <div className="space-y-3 mt-2">
               {resolvedList.map((task) => (
-                <div 
-                  key={task.id} 
+                <div
+                  key={task.id}
                   className="bg-green-100 border border-gray-200 rounded-md p-2 flex flex-col items-center justify-center shadow-lg shadow-gray-300"
                 >
                   <h2 className="text-[12px] text-black font-semibold">{task.title}</h2>
